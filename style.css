@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(242, 249, 255);
+}
+.navbar-nav{
+    margin-left: 9rem;
+    width: 100%;
+}
+#navbarNav{
+    width: 70%;
+}
+
+
+
+
+
+header nav ul li a{
+    color: #677389;
+    font-weight: bolder;
+    font-size: 0.8rem;
+}
+header nav ul li a:hover{
+    color: #484848;
+}
+header nav ul li a:active{
+    color: #000000;
+}
+
+
+header .logo{
+   
+    margin:auto 5rem ;
+}
+
+/* dark-button */
+header nav ul .dark-mode-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9rem;
+
+}
+header nav ul .btn-container{
+    display: flex;
+    background-color: black;
+    border: 2px solid black;
+    outline: 2px solid black;
+    border-radius: 20px;
+    gap: 3px;
+}
+
+header nav ul .btn-container .btn-1{
+    display: flex;
+    border: none;
+    border-radius: 50%;
+    
+}
+header nav ul .btn-container .btn-1 img{
+    background-color: rgba(255, 255, 255);
+    border-radius: 50%;
+}
+header nav ul .btn-container .btn-2{
+    display: flex;
+    border: none;
+    border-radius: 50%;
+    
+}
+header nav ul .btn-container .btn-2 .img-1{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+}
+header nav ul .btn-container .btn-2 .img-2{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+}
+/* section design */
+section{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.left-side,.right-side{
+    width: 50%;
+}
+
+.left-side .left-side-container{
+     padding: 5rem;  
+}
+.left-side .left-side-container .left-side-container-text h1{
+    font-size: 4rem;
+    color: #223343;
+}
+.left-side .left-side-container .left-side-container-text .para-1{
+    font-weight: bold;
+    color:#223344 ;
+}
+.left-side .left-side-container .left-side-container-text .para-2{
+    font-weight: 500;
+    margin: 1.4rem auto;
+    color: #687588;
+    
+}
+.left-side .left-side-container .button-group button{
+    background-color: #2B4ED0;
+    color: rgb(255, 255, 255);
+    padding: .81rem 2.6rem;
+    border-radius: 14px;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.left-side .left-side-container .button-group a{
+    color: #2A4CD1;
+    font-weight: 600;
+    text-decoration-style:solid;
+}
+
+.left-side .left-side-container .button-group,.left-side .left-side-container .checklist{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+.left-side .left-side-container .checklist p{
+    color: #909193;
+    margin: .5rem auto;
+}
+
+.right-side .img-container img{
+    width: 100%;
+}
+
+/* media quarry responsive */
+
+@media screen and (max-width:1024px){
+    section{
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+    .right-side{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-side .img-container{
+        width: 50%;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .left-side .left-side-container .left-side-container-text h1{
+        font-size: 3rem;
+    }
+    .left-side .left-side-container{
+        width: 75%;
+    }
+}
+@media screen and (max-width:991px){
+    header nav ul .dark-mode-btn {
+        display: flex;
+        justify-content: start;
+        margin-left: 0rem;
+      }
+}
+@media screen and (max-width:640px){
+    header nav ul .dark-mode-btn {
+        display: flex;
+        justify-content: start;
+        margin-left: 0rem;
+      }
+
+      .left-side .left-side-container .checklist p{
+        font-size: .7rem;
+        
+    }
+    .left-side .left-side-container{
+        width: 85%;
+    }
+}
